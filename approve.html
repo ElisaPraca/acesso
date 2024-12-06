@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprovar Convidado</title>
+</head>
+<body>
+    <h1>Aprovação de Convidado</h1>
+    <p>Nome do Convidado: {{ nome }}</p>
+    <form action="/approve/{{ nome }}" method="post">
+        <button type="submit">Aprovar</button>
+    </form>
+</body>
+</html>
